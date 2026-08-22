@@ -9,16 +9,12 @@ A minimal implementation of a GPT-style language model inspired by Andrej Karpat
 ├── final.py              # Main LLM implementation
 ├── input.txt             # Training data (Shakespeare's Coriolanus)
 ├── Hello.png             # Architecture diagram
-├── flask_app/            # Optional web interface for live demonstrations
-│   ├── flask_app.py      # Flask server
-│   ├── client.py         # CLI client for sending updates
-│   └── .env              # Environment configuration
 └── README.md             # This file
 ```
+
 ## Architecture Diagram
 
-![LLM Architecture](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85abb9b0-05cd-4459-a1ce-f8c9679fd252" />
-)
+![LLM Architecture](Hello.png)
 
 *The Hello.png file illustrates the data flow through the transformer architecture, showing how embeddings, attention mechanisms, and feed-forward networks combine to process sequential data.*
 
@@ -98,25 +94,9 @@ Configuration parameters controlling model capacity:
 - Generates 500 new tokens autoregressively
 - Decodes and prints the generated text
 
-## Flask Web Interface
-
-The optional `flask_app/` directory provides a live demonstration interface:
-
-- **flask_app.py**: Simple Flask server serving a real-time code display
-- **client.py**: CLI tool for sending text updates to the server
-- **.env**: Configuration pointing to a deployed instance
-
-To use locally:
-1. Install requirements: `pip install flask python-dotenv requests`
-2. Start server: `cd flask_app && python flask_app.py`
-3. In another terminal: `python client.py` and type messages ending with "SEND"
-
 ## Dependencies
 
 - PyTorch
-- Flask (optional, for web interface)
-- python-dotenv (optional, for web interface)
-- requests (optional, for web interface)
 
 ## Training Data
 
