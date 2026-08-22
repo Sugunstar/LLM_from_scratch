@@ -15,6 +15,12 @@ A minimal implementation of a GPT-style language model inspired by Andrej Karpat
 │   └── .env              # Environment configuration
 └── README.md             # This file
 ```
+## Architecture Diagram
+
+![LLM Architecture](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85abb9b0-05cd-4459-a1ce-f8c9679fd252" />
+)
+
+*The Hello.png file illustrates the data flow through the transformer architecture, showing how embeddings, attention mechanisms, and feed-forward networks combine to process sequential data.*
 
 ## Model Overview
 
@@ -91,12 +97,6 @@ Configuration parameters controlling model capacity:
 - Initializes context with null token
 - Generates 500 new tokens autoregressively
 - Decodes and prints the generated text
-
-## Architecture Diagram
-
-![LLM Architecture](Hello.png)
-
-*The Hello.png file illustrates the data flow through the transformer architecture, showing how embeddings, attention mechanisms, and feed-forward networks combine to process sequential data.*
 
 ## Flask Web Interface
 
